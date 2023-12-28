@@ -6,6 +6,8 @@ on:
   push:
     branches-ignore:
       - main
+  schedule:
+    - cron: '0 * * * *' 
 jobs:
   Deploy-Preview:
     runs-on: ubuntu-latest
